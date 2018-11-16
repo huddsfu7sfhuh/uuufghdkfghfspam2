@@ -1,23 +1,27 @@
 const Discord = require('discord.js');
-
-const Util = require('discord.js');
-    client = new Discord.Client({sisableEveryone: true})
- const devs = ['300482452164575242'];
-const adminprefix = "-";
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!devs.includes(message.author.id)) return;
-      
-  if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/Taaino");
-      message.channel.sendMessage(`**  ${argresult} تم تغيير الحاله الي ✅**`)
-  }
-  });
+const client = new Discord.Client();
 
 client.on('ready', () => {
+ console.log("welcome bot"); 
+console.log("log");
+});
 
-console.log('D7i Stream Start');
+client.on('ready', async() => {
+var server = "492851193010192424"; 
+var channel = "492852383089426433";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('193D7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7iD7193')
+    },305);
+})
 
+client.on('message',function(message) {
+    let prefix = ""; //بريفيكسك
+let args = message.content.split(" ").slice(1).join(" ");
+if(message.content.startsWith(prefix + "say")) {
+  if (message.author.id !== '507138559640076294') return message.nothing
+if('') return;
+message.channel.send(`${args}`);
+}
 });
 
 client.login(process.env.BOT_TOKEN);
